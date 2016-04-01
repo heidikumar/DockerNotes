@@ -14,16 +14,16 @@ Image related commands
 -----------------------
 
 Build an image called "imageName" from Dockerfile in current folder:
-	docker build -t imageName .
+	`docker build -t imageName .`
 
 Look at history of an image:
-	docker history {{ImageID#}}
+	`docker history {{ImageID#}}`
 
 Container related commands
 ---------------------------
 
 Run an image of a server:
-	docker run -it -p 8080:8080 {{ImageID#}}
+	`docker run -it -p 8080:8080 {{ImageID#}}`
 
 -it makes it run interactive
 -p assigns ports, which is set up as VM_Port:Local_Machine_Port
@@ -38,13 +38,13 @@ Fun Stuff
 
 You can override the commands of the run by adding the desired command to the end of the run command.
 For example:
-	docker run -it -p 8080:8080 {{ImageID#}} echo hello world
+	`docker run -it -p 8080:8080 {{ImageID#}} echo hello world`
 
 Useful commands:
-	docker ps : shows all currently running containers
-	docker ps -a : shows all containers
-	docker images : shows all loaded images
-	docker rm [id] :  remove a container
-	docker rmi : remove an image
+	`docker ps : shows all currently running containers`
+	`docker ps -a : shows all containers`
+	`docker images : shows all loaded images`
+	`docker rm [id] :  remove a container`
+	`docker rmi : remove an image`
 
 
