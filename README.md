@@ -53,11 +53,11 @@ You can override the commands of the run by adding the desired command to the en
 For example:
 	`docker run -it -p 8080:8080 {{ImageID#}} echo hello world`
 
-Useful commands:
-	`docker ps : shows all currently running containers`
-	`docker ps -a : shows all containers`
-	`docker images : shows all loaded images`
-	`docker rm [id] :  remove a container`
+Useful commands: <br />
+	`docker ps : shows all currently running containers` <br />
+	`docker ps -a : shows all containers` <br />
+	`docker images : shows all loaded images` <br />
+	`docker rm [id] :  remove a container` <br />
 	`docker rmi : remove an image`
 
 
