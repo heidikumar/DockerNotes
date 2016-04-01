@@ -19,14 +19,21 @@ Build an image called "imageName" from Dockerfile in current folder:
 Look at history of an image:
 	`docker history {{ImageID#}}`
 
+
 Container related commands
 ---------------------------
 
-Run an image of a server:
+Example of running an image of a server:
 	`docker run -it -p 8080:8080 {{ImageID#}}`
 
--it makes it run interactive
--p assigns ports, which is set up as VM_Port:Local_Machine_Port
+Here we have:  <br />
+-it makes it run interactive <br />
+-p assigns ports, which is set up as VM_Port:Local_Machine_Port <br />
+
+Other useful tags: <br />
+-d run container in detatched state from terminal <br />
+-e set enviroment variables <br />
+
 
 Docker Compose
 --------------
@@ -35,6 +42,12 @@ Docker compose is a useful way to build images and run containers all in one com
 
 Fun Stuff
 ---------
+
+Reset which docker-machine you are using to "default": <br />
+`eval "$(docker-machine ip default)"`
+
+View list of available VMs on your computer: <br />
+`docker-machine ls`
 
 You can override the commands of the run by adding the desired command to the end of the run command.
 For example:
